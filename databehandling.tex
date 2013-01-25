@@ -1,0 +1,92 @@
+\section{Databehandling}
+\subsection{Opgave 1}
+
+\begin{wraptable}[4]{R}[4cm]{0.66\textwidth}
+\caption{Databehandling ved små målinger}\label{tab:Databehandling}
+\subfloat[Faste værdier][Faste værdier]{
+  \begin{tabular}{lrl}
+    $m_{lod}$    &  0.0650   & [kg]    \\
+    h            &  0.6500   & [m]     \\
+    $D_2$        &  0.02951  & [m]     \\
+    $\theta$     &  43.9823  & [radian]\\
+  \end{tabular}
+  }
+\subfloat[1. forsøg][Værdier 1. forsøg]{
+  \begin{tabular}{lrl}
+    tid          &  37.05    & [s]\\
+    I            &  0.2044   & [kg*$m^2$]\\
+    $\omega$     &  2.3485   & [radian/s]\\
+    $\tau$       & -0.02618  & [Nm]\\
+  \end{tabular}
+}\par
+\subfloat[2. forsøg][Værdier 2. forsøg]{
+  \begin{tabular}{lrl}
+    tid          &  37.14    & [s]\\
+    I            &  0.2054   & [kg*$m^2$]\\
+    $\omega$     &  2.3485   & [radian/s]\\
+    $\tau$       & -0.02618  & [Nm]\\
+  \end{tabular}
+  }
+\subfloat[3. forsøg][Værdier 3. forsøg]{
+  \begin{tabular}{lrl}
+    tid         &  36.96     & [s]\\
+    I           &  0.2034    & [kg*$m^2$]\\
+    $\omega$    &  2.3485    & [radian/s]\\
+    $\tau$      & -0.02618   & [Nm]\\
+  \end{tabular}
+  }
+\end{wraptable}
+\clearpage
+Her er der en tabel til mange små tabeller og en simpel tabel\\
+\begin{table}[h]
+  \begin{tabular}{lrrrrl}
+  Periode 1  &  5.16  &  5.16  &  5.16  &  5.16  & [s]\\
+  Periode 2  &  5.19  &  5.19  &  5.19  &  5.19  & [s]\\
+  Periode 3  &  5.17  &  5.17  &  5.17  &  5.17  & [s]\\
+  Periode 4  &  5.28  &  5.28  &  5.28  &  5.28  & [s]\\
+  Periode 5  &  5.23  &  5.23  &  5.23  &  5.23  & [s]\\
+  Periode 6  &  5.13  &  5.13  &  5.13  &  5.13  & [s]\\
+  Periode 7  &  5.25  &  5.25  &  5.25  &  5.25  & [s]\\
+  Periode 8  &  5.24  &  5.24  &  5.24  &  5.24  & [s]\\
+  Periode 9  &  5.32  &  5.32  &  5.32  &  5.32  & [s]\\
+  Periode 10 &  5.18  &  5.18  &  5.18  &  5.18  & [s]\\
+  Gennemsnit &  5.215 &  5.215 &  5.215 &  5.215 & [s]\\
+  \end{tabular}
+  \caption{Stor simpel tabel}
+\end{table}
+
+\begin{table}[h]
+\begin{adjustwidth}{-0.5cm}{-0.1cm}
+\begin{tabular}{lrrrcrrrcrrr}
+& \multicolumn{3}{l}{\textbf{Opg 1}}
+&
+& \multicolumn{3}{l}{\textbf{Opg 2}}
+&
+& \multicolumn{3}{l}{\textbf{Opg 3}} \\
+
+& \multicolumn{1}{c}{Målt} 
+& \multicolumn{1}{c}{Teori} 
+& \multicolumn{1}{c}{[\%]} 
+&
+& \multicolumn{1}{c}{Målt} 
+& \multicolumn{1}{c}{Teori} 
+& \multicolumn{1}{c}{[\%]} 
+&
+& \multicolumn{1}{c}{Målt} 
+& \multicolumn{1}{c}{Teori} 
+& \multicolumn{1}{c}{[\%]} \\
+\cmidrule(r){2-4} \cmidrule(r){6-8} \cmidrule(r){10-12}
+
+
+\textbf{$i_1$} & 2.332 & 2.346 &  0.60 && -0.989 & -0.976 & -1.37 &&  1.356 &  1.370 &  1.05 \\ 
+\textbf{$i_2$} & 2.360 & 2.346 & -0.60 && -0.960 & -0.976 &  1.60 &&  1.384 &  1.370 & -0.99 \\ 
+\textbf{$i_3$} & 1.356 & 1.370 &  1.05 &&  0.921 &  0.935 &  1.50 &&  2.292 &  2.305 &  0.58 \\ 
+\textbf{$i_4$} & 0.989 & 0.976 & -1.37 && -1.898 & -1.911 &  0.66 && -0.921 & -0.935 &  1.50 \\ \addlinespace
+\textbf{$v_1$} & 2.324 & 2.330 &  0.24 && -0.960 & -0.969 &  0.91 &&  1.376 &  1.361 & -1.11 \\ 
+\textbf{$v_2$} & 5.137 & 5.126 & -0.21 && -2.123 & -2.132 &  0.41 &&  2.981 &  2.994 &  0.45 \\ 
+\textbf{$v_3$} & 4.536 & 4.544 &  0.18 &&  3.093 &  3.100 &  0.24 &&  7.667 &  7.645 & -0.29 \\ 
+\textbf{$v_4$} & 4.536 & 4.544 &  0.18 && -8.896 & -8.900 &  0.04 && -4.346 & -4.355 &  0.21 \\ 
+& \multicolumn{3}{l}{Skitseret på fig. \ref{fig:circuit_sc1}} && \multicolumn{3}{l}{Skitseret på fig. \ref{fig:circuit_sc2}} && \multicolumn{3}{l}{Skitseret på fig. \ref{fig:circuit}}\\
+\end{tabular}
+\end{adjustwidth}
+\end{table}

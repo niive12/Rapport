@@ -1,0 +1,73 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+
+%% Math environments, align, etc..
+\usepackage{amsmath}
+%% SI units support, the least of it is \ohm, many things to typeset number of significant decimals etc..
+\usepackage{siunitx}
+%% Draw circuit diagrams
+\usepackage[european,siunitx]{circuitikz}
+%% Nicer looking tables	
+\usepackage{booktabs}
+%% Includes without clearpage ie: \include*
+\usepackage{newclude}
+%% Customize Table of Content(s)
+% \usepackage[toc]{multitoc} For multicolumn table of contents
+\usepackage{tocloft}
+\usepackage{caption}
+\usepackage{floatrow}
+% chngpage allows adjusting side margins
+\usepackage{chngpage}
+
+% Floats etc..
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{wrapfig}
+
+%% Clickable links, extended pdf support etc.
+\usepackage[pdftex,
+ pdfauthor={DDF1 Nikolaj Iversen (Niive12), Mikkel Jaedicke (MiJae12), Lars Banner-Voigt (laban09), Gruppe 7},
+ pdftitle={Fysik, Øvelse 2},
+ pdfsubject={Robotteknologi},
+ pdfkeywords={robotteknologi, superposition},
+ pdfborder={0 0 0}, % Remove borders around links
+ unicode]{hyperref}
+ 
+% Header and footer
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+% Space for align*
+\setlength{\jot}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear header 
+\lhead{ELE Øvelse 4, Gruppe 7}
+\rhead{}
+\rfoot{s. \thepage/\pageref{LastPage}}
+
+\fancypagestyle{frontstyle}
+{
+   \fancyhf{}
+   \fancyfoot[C]{\footnotesize Page \thepage\ of \pageref{LastPage}}
+}
+
+% Title Page
+\title{ELE Øvelse 4: Operationsforstærker}
+\author{\textbf{DDF1}\\Nikolaj Iversen (Niive12)\\Mikkel Jaedicke (MiJae12)\\Lars Banner-Voigt (laban09)\\\textit{Gruppe 7}}
+
+\begin{document}
+\maketitle
+\belowpdfbookmark{Indholdsfortegnelse}{toc}
+\tableofcontents
+\listoftables
+\listoffigures
+\include{indledning}
+\include{teori} 
+\include{opstilling}
+\include*{databehandling}
+\include{konklusion}
+\end{document}
